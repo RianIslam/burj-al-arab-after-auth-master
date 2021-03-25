@@ -43,7 +43,7 @@ const Book = () => {
           margin="normal"
           id="date-picker-inline"
           label="Date picker inline"
-          value={selectedDate}
+          value={selectedDate.checkIn}
           onChange={handleDateChange}
           KeyboardButtonProps={{
             'aria-label': 'change date',
@@ -54,7 +54,7 @@ const Book = () => {
           id="date-picker-dialog"
           label="Date picker dialog"
           format="MM/dd/yyyy"
-          value={selectedDate}
+          value={selectedDate.checkOut}
           onChange={handleDateChange}
           KeyboardButtonProps={{
             'aria-label': 'change date',
