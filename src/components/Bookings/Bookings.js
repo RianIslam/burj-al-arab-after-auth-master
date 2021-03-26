@@ -9,7 +9,7 @@ const Bookings = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/booking')
+        fetch('http://localhost:5000/booking?email='+loggedInUser.email)
         .then(res => res.json())
         .then(data => setBookings(data))
     },[])
