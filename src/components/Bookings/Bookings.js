@@ -1,8 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { UserContext } from '../../App';
 
 const Bookings = () => {
 
     const [bookings,setBookings] = useState([])
+    const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+
 
 
     useEffect(() => {
