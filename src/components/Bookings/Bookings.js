@@ -10,7 +10,7 @@ const Bookings = () => {
     },[])
     return (
         <div>
-            
+            <h3>You have : {bookings.length} bookings</h3>
         </div>
     )
 }
