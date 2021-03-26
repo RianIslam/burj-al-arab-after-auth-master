@@ -33,7 +33,7 @@ const Login = () => {
     const storeAuthToken =() => {
         firebase.auth().currentUser.getIdToken(true)
         .then(function(idToken) {
-            console.log(idToken);
+           sessionStorage.setItem('token',idToken);
         })
         .catch(function(error) {
 
