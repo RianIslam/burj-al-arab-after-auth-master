@@ -28,6 +28,18 @@ const Login = () => {
             console.log(errorMessage);
           });
     }
+
+    const storeAuthToken =() => {
+        firebase.auth().currentUser.getIdToken(true)
+        .then(function(idToken) {
+            console.log(idToken);
+        })
+        .catch(function(error) {
+
+        })
+    }
+
+
     return (
         <div>
             <h1>This is Login</h1>
