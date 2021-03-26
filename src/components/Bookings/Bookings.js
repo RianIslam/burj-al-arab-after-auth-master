@@ -11,6 +11,10 @@ const Bookings = () => {
     return (
         <div>
             <h3>You have : {bookings.length} bookings</h3>
+
+            {
+                booking.Bookings(book => <li>{book.name} from : {book.checkIn} To:{book.checkOut}</li>)
+            }
         </div>
     )
 }
